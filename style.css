@@ -113,7 +113,7 @@ header{
 }
 
 .banner h1{
-    padding-top: 8%;
+    padding-top: 12%;
     color: rgb(0, 0, 0);
     font-size: 80px;
     text-transform: uppercase;
@@ -158,11 +158,11 @@ header{
     object-fit: cover;
 }
 .blog-card h3{
-    font-size: 25px;
+    font-size: 20px;
     margin: 10px;
 }
 .blog-card p{
-    font-size: 17px;
+    font-size: 15px;
     margin: 10px;
 }
 .read-more{
@@ -177,6 +177,8 @@ header{
     margin-top: 5px;
     transition: all 0.3 ease;
 }
+
+
 /*==================================FOOOTER==================================*/
 footer{
     position: relative;

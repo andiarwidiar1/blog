@@ -76,7 +76,7 @@ header{
 .container .right .para{
     width: 89%;
     color: black;
-    margin-top: 2%;
+    margin-top: 1%;
 }
 .container .right .name{
     font-size: 28px;
@@ -99,44 +99,107 @@ header{
 .container-porto{
     margin-top: 100px;
 }
-.wrapper{
-    width: 90%;
-    margin: 0 auto;
-}
+
+
 .banner{
     background-image: url(img/foto1.jpg);
     background-size: cover;
     background-position: center center;
     text-align: center;
     top: 78px;
-    height: 100vh;
+    height: 60vh;
     width: 100%;
-    position: fixed;
 }
-.banner:after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: rgb(0, 0, 0);
-    opacity: .7;
-    z-index: -1;
-}
+
 .banner h1{
     padding-top: 8%;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 80px;
     text-transform: uppercase;
 }
-.content-banner{
-    width: 100%;
-    height: 800px;
+/*==================================FOOOTER==================================*/
+footer{
     position: relative;
-    background-color: antiquewhite;
-    top: 600px;
+    bottom: 0px;
+    width: 100%;
+    background: rgb(107, 107, 107);
+}
+.main-content{
+    display: flex;
+}
+.main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+.box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.box .content{
+    margin: 20px 0 0 0;
+    position: relative;
+}
+.box .content:before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+}
+.box .content:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: #f12020;
+    top: -10px;
+}
+.left .content p{
+    text-align: justify;
+}
+.right form .text{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #000000;
+}
+.right form .msg{
+    margin-top: 10px;
+}
+.right form input, .right form textarea{
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #2e2929;
+    padding-left: 10px;
+    border: 1px solid #c53b3b;
+}
+.right form input:focus,.right form textarea:focus{
+    outline-color: #3498db;
+}
+.right form input{
+    height: 35px;
+}
+.right form .btn{
+    margin-top: 10px;
+}
+.right form .btn button{
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #f12020;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
 }
 
-/*=================FOOOTER=================*/
+.bottom center{
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
+}
+.bottom center span{
+    color: #ffffff;
+}
